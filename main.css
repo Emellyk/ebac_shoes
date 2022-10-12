@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #3967D6;
+    color: #fff;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16 px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*section .container {
+    align-items: flex-start;
+}*/
+
+#about {
+    padding: 24px 0;
+}
+
+#about h2,
+.container h2 {
+    margin-bottom: 16px;
+    color: #3967D6;
+    font-style: italic;
+    font-size: 20px;
+}
+
+hr {
+    background-color: #3967D6;
+}
+
+#about p {
+    margin-bottom: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    font-size: 16px;
+}
+
+.store-front {
+    margin-right: 32px;
+    height: 250px;
+}
+
+.produto {
+    max-width: 25%;
+    float: left;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produto {
+    float: left;
+}
+
+/*.produto {
+    display: grid;
+    grid-template-columns:  repeat(4, 24.5%);
+    float: left;
+}*/
+
+/*h4 {
+    font-size: 12px;
+    font-style: none;
+    padding: 8px 0;
+}*/
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #3967D6;
+    color:#fff;
+    max-width: 200px;
+    padding: 5px 0;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+@media screen and (max-width: 640px) {
+    .body {
+        max-width: 90%;
+        }
+    
+    .container {
+        display: block;
+    }
+
+    header {
+        display: flex;
+    }
+    
+    .container,
+    section .container {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    }
+
+    .store-front {
+        width: 100%;
+    }
+
+    header nav li {
+        display: block;
+        font-size: 1em;
+    }
+
+    header {
+        padding: 16px;
+        background-color: #3967D6;
+        color: #fff;
+    }
+
+    .produtos {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .body {
+        max-width: 90%;
+        }
+    
+    .container {
+        display: block;
+        }
+
+    header {
+        display: flex;
+    }
+        
+    .container,
+    section .container {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 90%;
+    }
+    
+    .store-front {
+        max-width: 100%;
+    }
+    
+    header nav li {
+        display: block;
+        font-size: 1em;
+        }
+    
+    header {
+        padding: 16px;
+        background-color: #3967D6;
+        color: #fff;
+    }
+    
+    .produtos {
+        display: block;
+    }
+}
